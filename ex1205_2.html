@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 태그에 리스너작성</title>
+</head>
+   <script>
+        let newP=document.getElementById("p");
+        newP.mouseover=function(){
+            p.onmouseover=over;
+            p.onmouseout=out;
+        }
+        function over(){
+            this.style.backgroundColor="blue";
+        }
+        function over(){
+            this.style.backgroundColor="white";
+        }
+   </script>
+<body onload="init()">
+    <h3>HTML 태그에 리스너 작성</h3>
+    <hr>
+    <P onmouseover="onmouseout=this.style.backgroundColor='white'"> 마우스 올리면 orchid 색으로 변경</P>
+</body>
+</html>
